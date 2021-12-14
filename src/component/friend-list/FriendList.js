@@ -1,10 +1,11 @@
 import FriendListItem from "./FriendListItem";
-import styles from "./FrendList.module.css";
-const FriendList = ({ frends }) => {
+import { Profile, List } from "./FriendList.styled";
+import frends from "./friends.json";
+const FriendList = () => {
   return (
-    <div className={styles.profile}>
+    <Profile>
       <p>Задание 1</p>
-      <ul className={styles.list}>
+      <List>
         {frends.map((frend) => (
           <FriendListItem
             key={frend.id}
@@ -13,8 +14,8 @@ const FriendList = ({ frends }) => {
             isOnline={frend.isOnline}
           />
         ))}
-      </ul>
-    </div>
+      </List>
+    </Profile>
   );
 };
 
