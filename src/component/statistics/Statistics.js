@@ -1,13 +1,16 @@
 import Stat from "./Stat.js";
+import { Container, Title, List } from "./Statistics.styled";
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">Upload stats</h2>}
-      {stats.map((stat) => (
-        <Stat key={stat.id} label={stat.label} percentage={stat.percentage} />
-      ))}
-    </section>
+    <Container>
+      {title && <Title>Upload stats</Title>}
+      <List>
+        {stats.map((stat) => (
+          <Stat key={stat.id} label={stat.label} percentage={stat.percentage} />
+        ))}
+      </List>
+    </Container>
   );
 };
 export default Statistics;

@@ -14,7 +14,6 @@ import {
 const SocialProfile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Profile>
-      <p>Задание 2</p>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
         <Name>{username}</Name>

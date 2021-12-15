@@ -1,17 +1,17 @@
 import Transaction from "./Transaction";
-
+import { History, Table, Head, Position, Title } from "./Transaction.styled";
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <History>
+      <Head>
+        <Position>
+          <Title>Type</Title>
+          <Title>Amount</Title>
+          <Title>Currency</Title>
+        </Position>
+      </Head>
 
-      <tbody>
+      <Table>
         {items.map((el) => (
           <Transaction
             key={el.id}
@@ -20,8 +20,8 @@ const TransactionHistory = ({ items }) => {
             currency={el.currency}
           />
         ))}
-      </tbody>
-    </table>
+      </Table>
+    </History>
   );
 };
 

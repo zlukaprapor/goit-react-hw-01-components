@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-
+import { Elements, Element } from "./Transaction.styled";
 const Transaction = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <Elements>
+      <Element>{type}</Element>
+      <Element>{amount}</Element>
+      <Element>{currency}</Element>
+    </Elements>
   );
 };
 

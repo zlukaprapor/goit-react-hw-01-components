@@ -5,6 +5,7 @@ export const Profile = styled.div`
   color: #000;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   text-align: center;
 `;
 export const Description = styled.div`

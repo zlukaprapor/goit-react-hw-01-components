@@ -4,7 +4,6 @@ import frends from "./friends.json";
 const FriendList = () => {
   return (
     <Profile>
-      <p>Задание 1</p>
       <List>
         {frends.map((frend) => (
           <FriendListItem

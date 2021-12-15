@@ -7,6 +7,7 @@ export const Profile = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px 0px;
   text-align: center;
 `;
