@@ -1,7 +1,6 @@
 import FriendListItem from "./FriendListItem";
 import { Profile, List } from "./FriendList.styled";
-import frends from "./friends.json";
-const FriendList = () => {
+const FriendList = ({ frends }) => {
   return (
     <Profile>
       <List>
