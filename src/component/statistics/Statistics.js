@@ -1,4 +1,5 @@
 import Stat from "./Stat.js";
+import PropTypes from "prop-types";
 import { Container, Title, List } from "./Statistics.styled";
 
 const Statistics = ({ title, stats }) => {
@@ -13,4 +14,10 @@ const Statistics = ({ title, stats }) => {
     </Container>
   );
 };
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
+};
+
 export default Statistics;
